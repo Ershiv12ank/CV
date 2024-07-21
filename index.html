@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivank Pandey - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .header, .section {
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header p {
+            margin: 5px 0;
+        }
+        .section h2 {
+            margin-top: 0;
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .skills ul, .projects ul, .activities ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Shivank Pandey</h1>
+        <p>+91-7722818056 ⋄ Vidisha (M.P)</p>
+        <p>shivank25ai053@satiengg.in ⋄ <a href="https://www.linkedin.com/in/shivank-pandey-087427222/">LinkedIn</a> ⋄ <a href="https://github.com/Ershiv12ank">GitHub</a></p>
+    </div>
+    <div class="section" id="objective">
+        <h2 onclick="toggleSection('objectiveContent')">Objective</h2>
+        <p id="objectiveContent">Versatile professional skilled in software development and data science, with experience in building scalable web applications and expertise in statistical analysis and machine learning. Committed to writing clean, maintainable code and transforming complex datasets into actionable insights for impactful business solutions.</p>
+    </div>
+    <div class="section" id="education">
+        <h2 onclick="toggleSection('educationContent')">Education</h2>
+        <div id="educationContent" class="hidden">
+            <p>Bachelor of Technology in Artificial Intelligence and Data Science,<br>
+            Samrat Ashok Technological Institute, Vidisha.<br>
+            CGPA: 7.65 (2021-2025)</p>
+            <p>St. Harshan Convent Higher Secondary School, Satna<br>
+            Higher Secondary School, Percent: 77 (2021)</p>
+        </div>
+    </div>
+    <div class="section skills" id="skills">
+        <h2 onclick="toggleSection('skillsContent')">Skills</h2>
+        <ul id="skillsContent" class="hidden">
+            <li><strong>Programming Languages:</strong> Python, C++, Java, C, SQL</li>
+            <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Flask, MongoDB, Bootstrap</li>
+            <li><strong>Machine Learning:</strong> TensorFlow, NLP, Scikit-learn, Pytorch, Pandas, Numpy, Matplotlib, Seaborn</li>
+            <li><strong>Tools and Framework:</strong> AWS, Swing, MYSQL, Linux, Git, Github, VS Code</li>
+            <li><strong>Relevant Coursework:</strong> Artificial Intelligence, Operating System, Computer Network, Data Science</li>
+            <li><strong>Soft Skills:</strong> Problem Solving, Leadership, Time Management, Communication, Teamwork</li>
+        </ul>
+    </div>
+    <div class="section" id="experience">
+        <h2 onclick="toggleSection('experienceContent')">Experience</h2>
+        <div id="experienceContent" class="hidden">
+            <h3>Data Science Virtual Internship</h3>
+            <p><strong>Technook</strong> (Dec 2022 - Jan 2023, Online)</p>
+            <ul>
+                <li>Learned fundamental data science concepts including data cleaning, preprocessing, exploration, visualization, modeling, and evaluation.</li>
+                <li>Gained hands-on experience with real-world data science projects and datasets.</li>
+            </ul>
+            <h3>FITT (Computer Vision) Virtual Training</h3>
+            <p><strong>Indian Institute of Technology Delhi</strong> (Jan 2024 - Feb 2024, Online)</p>
+            <ul>
+                <li>Engaged in practical, hands-on projects applying theoretical knowledge to real-world scenarios.</li>
+                <li>Earned a certificate of completion validating proficiency in computer vision concepts and techniques.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section projects" id="projects">
+        <h2 onclick="toggleSection('projectsContent')">Projects</h2>
+        <ul id="projectsContent" class="hidden">
+            <li><strong>Quality Prediction Dashboard:</strong> A website-based element quality prediction system for Air, Water, and Wine, implemented using various ML algorithms and EDA.</li>
+            <li><strong>Travel Management System Project:</strong> Java Programming using NetBeans IDE with Graphical User Interface (GUI).</li>
+        </ul>
+    </div>
+    <div class="section activities" id="activities">
+        <h2 onclick="toggleSection('activitiesContent')">Extra-Curricular Activities</h2>
+        <ul id="activitiesContent" class="hidden">
+            <li>NCC C Certificate (Alpha) and leadership experience in National level camps</li>
+            <li>First Position in research paper presentation competition</li>
+            <li>Part of NSS (National Service Scheme)</li>
+            <li>Army attachment camp (EME)</li>
+        </ul>
+    </div>
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
